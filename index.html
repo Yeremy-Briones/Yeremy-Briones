@@ -3,32 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Yeremy Briones</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
-        header { background-color: #333; color: white; text-align: center; padding: 1rem; }
-        section { padding: 2rem; text-align: center; }
-        footer { background-color: #333; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
-    </style>
+    <title>Portafolio de Yeremy Briones</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/Yeremy-Briones/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Yeremy Briones</h1>
-        <p>Desarrollador Full Stack</p>
-    </header>
-    <section>
-        <h2>Sobre mí</h2>
-        <p>Soy un técnico en telecomunicaciones en formación como desarrollador full stack. Trabajo con tecnologías como JavaScript, Python, HTML y CSS.</p>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Yeremy Briones</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Educación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="text-white text-center py-5" style="background-image: url('/Yeremy-Briones/Img/ferrari.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="hero-overlay p-4 rounded">
+                <h1 class="display-4">Yeremy Briones</h1>
+                <p class="lead">Técnico en Telecomunicaciones | Desarrollador Full Stack</p>
+                <a href="#about" class="btn btn-light btn-lg">Conóceme más</a>
+            </div>
+        </div>
     </section>
-    <section>
-        <h2>Proyectos</h2>
-        <ul>
-            <li><a href="https://github.com/tuusuario/proyecto1" target="_blank">Proyecto 1</a></li>
-            <li><a href="https://github.com/tuusuario/proyecto2" target="_blank">Proyecto 2</a></li>
-        </ul>
+
+    <!-- Sobre Mí -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center">
+                    <img src="/Yeremy-Briones/Img/Generation.jpg" alt="Foto de Yeremy Briones" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-lg-6">
+                    <h2>Sobre Mí</h2>
+                    <p class="lead">
+                        ¡Hola! Soy Yeremy Briones, un apasionado desarrollador full stack con formación en telecomunicaciones y experiencia en soporte técnico informático. Actualmente, estoy ampliando mis conocimientos a través de un bootcamp de desarrollo full stack, donde he trabajado con tecnologías como JavaScript, Python, HTML, CSS, React, Node.js, y bases de datos como MongoDB y SQL. Me especializo en la creación de aplicaciones web dinámicas y eficientes, aplicando buenas prácticas de desarrollo y metodologías ágiles.  
+                        <br><br>
+                        Además de mis habilidades técnicas, destaco por mi capacidad de adaptación, trabajo en equipo, pensamiento crítico y resolución de problemas. Disfruto enfrentar desafíos que me permitan aprender y crecer profesionalmente, manteniendo siempre una actitud proactiva y comprometida con los proyectos en los que participo. Mi objetivo es seguir mejorando continuamente y aportar con soluciones innovadoras en el desarrollo de software.
+                    </p>
+                    <div class="text-center mt-4">
+                        <a href="https://www.linkedin.com/in/yeremy-briones-herrera" target="_blank" class="btn btn-primary btn-lg" style="background-color: #0077B5; border: none;">
+                            <i class="fab fa-linkedin" style="margin-right: 8px;"></i> Visita mi LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>
-        <p>© 2025 Yeremy Briones</p>
+
+    <!-- CV -->
+    <section id="cv" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Mi Currículum Vitae</h2>
+            <p class="text-center mb-4">Puedes ver mi CV a continuación o descargarlo en PDF.</p>
+            <div class="text-center mb-4">
+                <!-- Botón para descargar el CV -->
+                <a href="/Yeremy-Briones/Doc/Yeremy-B-CV.pdf" download="Yeremy-Briones-CV.pdf" class="btn btn-primary me-2">
+                    Descargar CV
+                </a>
+               
+            </div>
+            <!-- Visualizador de PDF -->
+            <iframe src="/Yeremy-Briones/Doc/Yeremy-B-CV.pdf" width="100%" height="600px" style="border: none;"></iframe>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="projects" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Mis Proyectos</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Chelenko Lodge</h5>
+                            <p class="card-text">
+                                Proyecto de gestión de datos donde trabajé en el backend y el almacenamiento de la data. 
+                                Implementé soluciones para garantizar la integridad y eficiencia de los datos.
+                            </p>
+                            <a href="#" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Otros proyectos -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 2</h5>
+                            <p class="card-text">Descripción breve del proyecto 2.</p>
+                            <a href="#" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 3</h5>
+                            <p class="card-text">Descripción breve del proyecto 3.</p>
+                            <a href="#" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Sección de Educación -->
+<section id="education" class="py-5" style="background: linear-gradient(135deg, #000, #C30003); color: #fff;">
+    <div class="container">
+        <h2 class="text-center mb-4">Educación</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Desarrollador Full Stack JavaScript</h4>
+                <p><strong>Generation Chile</strong> - Noviembre 2024 - Febrero 2025</p>
+            </div>
+            <div class="col-md-6">
+                <h4>Ing. en Telecomunicaciones (Incompleto)</h4>
+                <p><strong>INACAP</strong> - 2020 - 2021</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12 text-center">
+                <h4>Educación Media</h4>
+                <p><strong>Instituto Cumbre de Cóndores Oriente</strong> - 2015 - 2018</p>
+                <p>Técnico en Telecomunicaciones</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Experiencia Laboral -->
+<section id="experience" class="py-5" style="background-color: #fff; color: #333;">
+    <div class="container">
+        <h2 class="text-center mb-4" style="color: #C30003;">Experiencia Laboral</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Desarrollador - Chelenko Lodge</h4>
+                <p>Desarrollo y mantenimiento del Backend con MongoDB, Node.js y Express (2025).</p>
+            </div>
+            <div class="col-md-6">
+                <h4>Práctica en SENAMA</h4>
+                <p>Soporte informático con tareas como:</p>
+                <ul>
+                    <li>Generación de informes en Excel.</li>
+                    <li>Configuración de teléfonos IP.</li>
+                    <li>Conocimiento en software y sistemas operativos.</li>
+                    <li>Manejo de Microsoft Office 360.</li>
+                    <li>Desarmado y ensamblado de PC.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contacto -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contacto</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Asunto</label>
+                    <input type="text" class="form-control" id="subject" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Yeremy Briones. Todos los derechos reservados.</p>
+         <!-- Botón para volver al inicio -->
+         <a href="#hero" class="btn btn-secondary">Volver al inicio</a>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
